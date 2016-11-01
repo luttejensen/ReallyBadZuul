@@ -23,6 +23,19 @@ public class CommandWords
     {
         // nothing to do at the moment...
     }
+    
+    /**
+     * print all valid commands to System.out
+     */
+    
+    public void showAll()
+    {
+        for(String command : validCommands)
+        {
+            System.out.print(command + " ");
+        }
+        System.out.println();
+    }
 
     /**
      * Check whether a given String is a valid command word. 
