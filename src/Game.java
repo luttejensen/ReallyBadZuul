@@ -37,9 +37,9 @@ public class Game
         Room outside, cellar, sofa, kitchen, cupboard, cellarChest, chest;
       
         // create the rooms
-        outside = new Room("outside the main entrance of the burrow");
+        outside = new Room("outside the burrow");
         chest = new Room("inside a chest");
-        cellar = new Room("in the cellar");
+        cellar = new Room("down in the cellar");
         cellarChest = new Room("inside a chest");
         sofa = new Room("under the sofa");
         kitchen = new Room("in the kitchen");
@@ -90,10 +90,7 @@ public class Game
         System.out.println("World of Zuul is a new, incredibly boring adventure game.");
         System.out.println("Type 'help' if you need help.");
         System.out.println();
-  //      printLocationInfo();
-        currentRoom.getExitString();
-
-        System.out.println();
+        System.out.println(currentRoom.getLongDescription());
     }
 
     /**
@@ -127,8 +124,6 @@ public class Game
 
         return wantToQuit;
     }
-
-    // implementations of user commands:
 
     /**
      * Print out some help information.

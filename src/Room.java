@@ -19,11 +19,11 @@ import java.util.Set;
 public class Room 
 {
     private String description;
-    private HashMap<String, Room>exits;
-    private Room northExit;
-    private Room southExit;
-    private Room eastExit;
-    private Room westExit;
+    private HashMap<String, Room> exits;
+//    private Room northExit;
+//    private Room southExit;
+//    private Room eastExit;
+//    private Room westExit;
     
 
     /**
@@ -77,12 +77,12 @@ public class Room
     public String getExitString()
     {        
         String exitString = "Exits: ";
-        String returnString = "";
+        String returnString = " ";
         
         Set<String> keys = exits.keySet();
             for(String exit : keys)
             {
-                returnString += "" + exit;
+                returnString += " " + exit;
             }
             return returnString;
        
